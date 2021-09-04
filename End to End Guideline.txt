@@ -1,0 +1,30 @@
+//Creat a Vitual Environment with in your file to smoothup your object detection code 
+in powershell window promt//
+1-   python -m venv utfod
+Activate the vitual env (very imp step otherwise you will got several error )
+2-  ./utfod/Scripts/activate 
+
+**If error-
+  cannot be loaded because running scripts is disabled on this system.
+**Solution-
+  execute it first in powershell
+  >>Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope CurrentUser
+  >> ./utfod/Scripts/activate
+  
+
+4 -python -m pip install --upgrade pip
+5- pip install ipykernel
+6- python -m ipykernel install --user --name=utfod
+
+// Image collection rules and labelling of Images//
+we collect images by using our webcam 
+now lets try!But!
+**(take images from different angles at different light condition keep labels as tight as possible and it should be case sensitive)**
+
+7- Creat a another Image collection notebook to collect the Images.
+**(make sure you are in the virtual environment .In the right corner of your newly created notebook it will show your vitual environment name for me it is 'utfod' but for you if it showing python 3 then go to kernel and change the kernel.)**
+
+8 -Always remember that you should be activated in vitual env (./utfod/Scripts/activate )
+9-if No module named 'libs.resources' then use (pyrcc5 -o libs/resources.py resources.qrc)
+10-
+
